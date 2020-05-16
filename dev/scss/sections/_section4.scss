@@ -1,3 +1,79 @@
 /* =============
     section 4
 ============= */
+
+
+/* =============
+    section 3
+============= */
+#section-4 {
+    #section-4-grid {
+        aside {
+            img {
+                width: 100%;
+            }
+        }
+
+        padding-bottom: 40px;
+
+        @include lg {
+
+            display: grid;
+            grid-template-areas: ". c1 c2 c3 .";
+            grid-template-columns: 15px auto auto auto 15px;
+            column-gap: 20px;
+
+        }
+
+
+        #section-4-container1 {
+
+            h2 {
+                font-family: 'Merriweather', serif;
+                font-size: 2em;
+            }
+
+            text-align: center;
+            margin: 0px 0px 100px;
+            padding-bottom: 20px;
+            background-color: $white;
+            grid-area: c1;
+
+        }
+
+
+        #section-4-container2 {
+
+            h2 {
+                font-family: 'Merriweather', serif;
+                font-size: 2em;
+            }
+
+            text-align: center;
+            margin: 0px 0px 100px;
+            padding-bottom: 20px;
+            background-color: $white;
+
+            grid-area: c2;
+
+        }
+
+
+        #section-4-container3 {
+
+            h2 {
+                font-family: 'Merriweather', serif;
+                font-size: 2em;
+            }
+
+            text-align: center;
+            margin: 0px 0px 100px;
+            padding-bottom: 20px;
+            background-color: $white;
+            grid-area: c3;
+
+        }
+
+    }
+
+}

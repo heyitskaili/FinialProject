@@ -351,8 +351,19 @@ textarea {
     section 1
 ============= */
 #section-1 {
-  color: rosybrown; }
-
+  margin-top: 0em;
+  background-image: url("../img/section1/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px; }
+  @media (min-width: 768px) {
+    #section-1 {
+      background-position: center;
+      height: 600px; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      background-position: center;
+      height: 700px; } }
 /* =============
     section 2
 ============= */
@@ -363,8 +374,54 @@ textarea {
     section 4
 ============= */
 /* =============
+    section 3
+============= */
+#section-4 #section-4-grid {
+  padding-bottom: 40px; }
+  #section-4 #section-4-grid aside img {
+    width: 100%; }
+  @media (min-width: 992px) {
+    #section-4 #section-4-grid {
+      display: grid;
+      grid-template-areas: ". c1 c2 c3 .";
+      grid-template-columns: 15px auto auto auto 15px;
+      column-gap: 20px; } }
+  #section-4 #section-4-grid #section-4-container1 {
+    text-align: center;
+    margin: 0px 0px 100px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    grid-area: c1; }
+    #section-4 #section-4-grid #section-4-container1 h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 2em; }
+  #section-4 #section-4-grid #section-4-container2 {
+    text-align: center;
+    margin: 0px 0px 100px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    grid-area: c2; }
+    #section-4 #section-4-grid #section-4-container2 h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 2em; }
+  #section-4 #section-4-grid #section-4-container3 {
+    text-align: center;
+    margin: 0px 0px 100px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    grid-area: c3; }
+    #section-4 #section-4-grid #section-4-container3 h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 2em; }
+
+/* =============
     section 5
 ============= */
+#section5-content {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-areas: i1 i2; }
+
 /* =============
     section 6
 ============= */
@@ -374,3 +431,34 @@ textarea {
 /* =============
     section 8
 ============= */
+@media (min-width: 992px) {
+  #section8 {
+    display: grid;
+    grid-template-areas: ". section-4 .";
+    grid-template-columns: 15px auto 15px; } }
+
+@media (min-width: 1200px) {
+  #section8 {
+    grid-template-columns: auto 1200px auto; } }
+
+#section8 ul {
+  grid-area: section-4;
+  display: grid;
+  grid-template-rows: repeat(4, 290px);
+  grid-gap: 20px;
+  grid-template-areas: "g1" "g2" "g3" "g4"; }
+  #section8 ul li {
+    background-size: cover;
+    background-position: center; }
+  #section8 ul #g1 {
+    grid-area: g1;
+    background-image: url("../img/section8/g1.jpg"); }
+  #section8 ul #g2 {
+    grid-area: g2;
+    background-image: url("../img/section8/g2.jpg"); }
+  #section8 ul #g3 {
+    grid-area: g3;
+    background-image: url("../img/section8/g3.png"); }
+  #section8 ul #g4 {
+    grid-area: g4;
+    background-image: url("../img/section8/g4.png"); }

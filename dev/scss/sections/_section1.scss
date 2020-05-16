@@ -3,6 +3,21 @@
 ============= */
 
 
-#section-1{ 
-color: rosybrown;
+#section-1 {
+    margin-top: 0em;
+    background-image: url('../img/section1/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+
+    @include md {
+        background-position: center;
+        height: 600px;
+    }
+
+    @include lg {
+
+        background-position: center;
+        height: 700px;
+    }
 }
