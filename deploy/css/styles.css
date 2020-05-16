@@ -332,6 +332,10 @@ ul {
   @media (min-width: 992px) {
     .show-for-large {
       display: block; } }
+* {
+  margin: 0em;
+  padding: 0em; }
+
 /* =============
     Typography
 ============= */
@@ -419,19 +423,32 @@ footer {
   margin-top: 0em;
   background-image: url("../img/section1/hero.jpg");
   background-size: cover;
-  background-position: center;
-  height: 600px; }
+  background-position: 35%;
+  height: 400px; }
   @media (min-width: 768px) {
     #section-1 {
-      background-position: center;
-      height: 600px; } }
+      background-position: right;
+      height: 450px; } }
   @media (min-width: 992px) {
     #section-1 {
-      background-position: center;
-      height: 700px; } }
+      background-position: 70% 15%;
+      height: 550px; } }
 /* =============
     section 2
 ============= */
+#section2 {
+  background-color: #DACEBB;
+  text-align: center;
+  font-size: 15px;
+  padding: 30px 70px; }
+  @media (min-width: 768px) {
+    #section2 {
+      font-size: 15px;
+      padding: 50px 100px; } }
+  @media (min-width: 992px) {
+    #section2 {
+      font-size: 20px;
+      padding: 60px 150px; } }
 /* =============
     section 3
 ============= */

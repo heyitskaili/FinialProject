@@ -7,17 +7,18 @@
     margin-top: 0em;
     background-image: url('../img/section1/hero.jpg');
     background-size: cover;
-    background-position: center;
-    height: 600px;
+    background-position: 35%;
+    height: 400px;
+    
 
     @include md {
-        background-position: center;
-        height: 600px;
+        background-position: right;
+        height: 450px;
     }
 
     @include lg {
 
-        background-position: center;
-        height: 700px;
+        background-position: 70% 15%;
+        height: 550px;
     }
 }
