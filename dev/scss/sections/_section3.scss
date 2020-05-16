@@ -3,6 +3,64 @@
 ============= */
 
 
-img{
-    width: 100%;
-}
+/* =============
+  section-2
+============= */
+
+
+
+#section3 {
+
+  
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: $gray;
+  
+  
+    @include md {
+      #section3-container {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-template-areas:
+          ". section3-img"
+          "section3-content section3-img"
+          ". section3-img";
+          font-size: 12px;
+      }
+  
+    }
+  
+  
+    @include lg {
+      #section3-container {
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-areas:
+        ". section3-img"
+        "section3-content section3-img"
+        ". section3-img";
+        font-size: 15px;
+      }
+  
+    }
+  
+  
+  
+    #section3-img {
+      img {
+        width: 100%;
+      }
+  
+      ;
+  
+      grid-area: section3-img;
+  
+    }
+  
+    #section3-content {
+  
+      grid-area: section3-content;
+    }
+  
+  
+  }

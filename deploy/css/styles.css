@@ -336,6 +336,9 @@ ul {
   margin: 0em;
   padding: 0em; }
 
+img {
+  width: 100%; }
+
 /* =============
     Typography
 ============= */
@@ -452,8 +455,31 @@ footer {
 /* =============
     section 3
 ============= */
-img {
-  width: 100%; }
+/* =============
+  section-2
+============= */
+#section3 {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #656565; }
+  @media (min-width: 768px) {
+    #section3 #section3-container {
+      display: grid;
+      grid-template-columns: 30% auto;
+      grid-template-areas: ". section3-img" "section3-content section3-img" ". section3-img";
+      font-size: 12px; } }
+  @media (min-width: 992px) {
+    #section3 #section3-container {
+      display: grid;
+      grid-template-columns: 40% auto;
+      grid-template-areas: ". section3-img" "section3-content section3-img" ". section3-img";
+      font-size: 15px; } }
+  #section3 #section3-img {
+    grid-area: section3-img; }
+    #section3 #section3-img img {
+      width: 100%; }
+  #section3 #section3-content {
+    grid-area: section3-content; }
 
 /* =============
     section 4
