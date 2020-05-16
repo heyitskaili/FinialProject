@@ -335,6 +335,16 @@ ul {
 /* =============
     Typography
 ============= */
+p {
+  font-family: 'MinecraftiaRegular';
+  font-weight: normal;
+  font-style: normal; }
+
+h1 {
+  font-family: 'MinecrafterAltRegular';
+  font-weight: normal;
+  font-style: normal; }
+
 /* =============
     Buttons
 ============= */
